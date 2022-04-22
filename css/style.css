@@ -78,9 +78,12 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
 }
 .nav-link:hover,
 .nav-link:focus {
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
 }
 .items > .list {
@@ -116,9 +119,12 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
 }
 .connection-link:hover,
 .connection-link:focus {
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
 }
 /* Декоративные картинки телефона и мэил */
@@ -223,12 +229,15 @@ color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 .footer-list + .footer-list{
   margin-left: 10px;
 }
 .footer-list>.footer-link:hover,
 .footer-list>.footer-link:focus{
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2196F3;
 }
 .footer-icon-social{
@@ -342,6 +351,23 @@ padding-bottom: 0;
   display: flex;
   justify-content: space-between;
 }
+.list-features-item{
+position: relative;
+}
+.list-features-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 27px 82px;
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: rgba(47, 48, 58, 0.8);
+width: 100%;
+}
 .headline {
   font-weight: 700;
   font-size: 36px;
@@ -405,13 +431,17 @@ padding-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+border-radius: 50%;
 width: 44px;
 height: 44px;
 color: #AFB1B8;
+transition-property: background-color, border-radius;
+transition-duration: 250ms;
 }
 .team-link-icon:hover,
 .team-link-icon:focus{
-border-radius: 50%;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: background-color;
 color: #FFFFFF;
 background-color: #2196f3;
 }
@@ -446,9 +476,12 @@ background-color: #2196f3;
   cursor: pointer;
   padding: 12px 30px;
   color: #afb1b8;
+  transition-duration: 250ms;
+  transition-property: color, border-color;
 }
 .clients-list>.link:focus,
 .clients-list>.link:hover {
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 color: #2196F3;
   border-color: #2196F3;
 }
@@ -493,8 +526,7 @@ color: #2196F3;
   margin-right: 0;
 }
 
-.sorting-works,
-.sorting-works:focus {
+.sorting-works {
   padding: 6px 22px;
   border-radius: 4px;
   border: #f5f4fa;
@@ -504,9 +536,12 @@ color: #2196F3;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  transition-duration: 250ms;
+  transition-property: all;
 }
 .sorting-works:hover,
 .sorting-works:focus {
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -525,6 +560,8 @@ color: #2196F3;
 .list-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  transition-property: filter;
+  transition-duration: 250ms;
 }
 .list-item:nth-child(3n) {
   margin-right: 0;
@@ -534,6 +571,7 @@ color: #2196F3;
 }
 .list-item:hover,
 .list-item:focus {
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /* Заголовок и описание */
