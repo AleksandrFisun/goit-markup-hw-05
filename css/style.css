@@ -221,8 +221,8 @@ border-radius: 2px;
 .title-join{
   margin-bottom: 20px;
   font-family: var(--font-roboto);
-font-weight: 700;
-font-size: 17px;
+font-weight: 500;
+font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 color: #FFFFFF;
@@ -281,7 +281,7 @@ color: #FFFFFF;
   text-align: center;
 }
 .promo {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),url(../images/baner-promo.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/baner-promo.jpg);
   background-color: rgba(47, 48, 58, 0.4);
   background-position: center;
   background-size: cover;
@@ -331,6 +331,7 @@ color: #FFFFFF;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+border-radius: 4px;
   background-color: #F5F4FA;
 }
 .dignity-icon{
@@ -375,6 +376,7 @@ z-index: 1;
   left: 0;
   padding: 27px 82px;
   font-family: var(--font-roboto);
+font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -602,7 +604,7 @@ color: #2196F3;
   width: 100%;
   transform: translatey(100%);
   transition-duration: 450ms;
-  padding: 24px 63px;
+  padding: 63px 24px ;
   font-family: var(--font-roboto);
   font-style: normal;
   font-weight: 400;
