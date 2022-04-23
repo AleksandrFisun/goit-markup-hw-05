@@ -56,7 +56,17 @@
         <!-- Промо -->
         <section class="promo promo-section">
             <h1 class="promo-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" value="Заказать услугу" class="promo-order">Заказать услугу</button>
+            <button data-modal-open type="button" value="Заказать услугу" class="promo-order">Заказать
+                услугу</button>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal"> <button data-modal-close type="button" value="exit" class="button-modal-exit"><svg
+                            class="icon-exit">
+                            <use href="./images/sprite.svg#icon-exit">
+                            </use>
+                        </svg></button>
+                </div>
+            </div>
         </section>
         <!-- Наши достоинства -->
         <section class="section section-skills">
@@ -359,7 +369,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
